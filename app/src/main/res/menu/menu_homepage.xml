@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profile" android:icon="@drawable/outline_account_circle_24"
+        android:title="Perfil" />
+    <item android:id="@+id/homepage" android:icon="@drawable/outline_home_24"
+        android:title="Início" android:enabled="true"
+        android:checked="true"/>
+    <item android:id="@+id/games" android:icon="@drawable/outline_sports_esports_24"
+        android:title="Jogos" android:enabled="true"
+        android:checked="true"/>
+    <item android:id="@+id/fav" android:icon="@drawable/outline_favorite_24"
+        android:title="Favoritos" />
+
+
+</menu>
