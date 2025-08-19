@@ -88,6 +88,11 @@
           <theme>@style/Theme.GameBox</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_games.xml">
+        <config>
+          <theme>@style/Theme.GameBox</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
         <config>
           <theme>@style/Theme.GameBox</theme>
@@ -108,7 +113,17 @@
           <theme>@style/Theme.GameBox</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_game.xml">
+        <config>
+          <theme>@style/Theme.GameBox</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/login_background.xml">
+        <config>
+          <theme>@style/Theme.GameBox</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/menu_layout.xml">
         <config>
           <theme>@style/Theme.GameBox</theme>
         </config>
@@ -125,6 +140,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21a82743-fc66-4707-80dd-0ed84be39cfc" name="Changes" comment="Primeiro commit tralalero tralala">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_games.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
@@ -133,15 +149,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameBox/GameBox" beforeDir="false" afterPath="$PROJECT_DIR$/GameBox/GameBox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/box/gamebox/ui/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/box/gamebox/ui/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_edittext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_button_login_create_account.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_login_shape.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_login_shape.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +165,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=R9XNA0C7B8W)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\aylam\.android\avd\Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -162,7 +176,9 @@
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
+        <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -175,14 +191,14 @@
     &quot;assignee&quot;: &quot;adriansgpy&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aylamich/GameBox.git",
-    "accountId": "7c1d07ef-3af1-48ba-b6f1-6c855bf347ed"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aylamich/GameBox.git&quot;,
+    &quot;accountId&quot;: &quot;7c1d07ef-3af1-48ba-b6f1-6c855bf347ed&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;ff0000ff&quot;,
@@ -195,7 +211,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Android App.app.executor": "Run",
+    "Android App.app.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -206,8 +222,8 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Adrian/AndroidStudioProjects/GameBox/app/src/main/res/drawable",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "last_opened_file_path": "C:/faculdade/GameBox",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -219,6 +235,7 @@
       <recent name="C:\Users\Adrian\AndroidStudioProjects\GameBox\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\faculdade\GameBox\app\src\main\res\layout" />
       <recent name="C:\Users\Adrian\AndroidStudioProjects\GameBox\app\src\main\res\drawable" />
     </key>
     <key name="android.template.-997430960">
@@ -370,12 +387,12 @@
         </entry>
         <entry key="com.box.gamebox">
           <value>
-            <CheckInfo lastCheckTimestamp="1755359770426" />
+            <CheckInfo lastCheckTimestamp="1755563477993" />
           </value>
         </entry>
         <entry key="com.box.gamebox.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1755359770424" />
+            <CheckInfo lastCheckTimestamp="1755563477992" />
           </value>
         </entry>
       </map>

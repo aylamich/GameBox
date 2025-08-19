@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genre_array">
+        <item>Gênero</item>
+        <item>Ação</item>
+        <item>Aventura</item>
+        <item>RPG</item>
+        <item>Esportes</item>
+        <item>Estratégia</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>Ano</item>
+        <item>2025</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+    </string-array>
+</resources>

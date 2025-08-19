@@ -14,7 +14,13 @@
         android:id="@+id/bgImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/bgbg"
+
+
+
+
+
+
+
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

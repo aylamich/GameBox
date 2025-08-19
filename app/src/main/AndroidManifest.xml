@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameBox">
         <activity
+            android:name=".ui.Activities.GamesActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.Activities.MainPage"
             android:exported="false" />
         <activity
@@ -22,13 +30,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

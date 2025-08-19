@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.box.gamebox.ui.Activities.GamesActivity"
+    android:background="@color/black_gray">
+
+    <!-- jogos -->
+    <LinearLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_shape"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_above="@id/bottomNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- filtros -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- barra de busca -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginEnd="8dp"
+                android:hint="Pesquisar jogo"
+                app:boxStrokeColor="@color/white"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="#CDC7BFBF"
+
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- genero filtro -->
+            <Spinner
+                android:id="@+id/filtroGenero"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:entries="@array/genre_array"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- ano filtro -->
+            <Spinner
+                android:id="@+id/filtroAno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:entries="@array/year_array"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <!-- jogos lista -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gamesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_game" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        app:menu="@menu/menu_homepage"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</RelativeLayout>
