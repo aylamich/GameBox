@@ -1,4 +1,4 @@
-package com.box.gamebox.ui;
+package com.box.gamebox.ui.Models;
 
 public class Game {
     private String titulo;

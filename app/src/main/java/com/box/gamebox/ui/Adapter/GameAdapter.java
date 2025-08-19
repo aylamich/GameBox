@@ -1,4 +1,4 @@
-package com.box.gamebox.ui;
+package com.box.gamebox.ui.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.box.gamebox.R;
+import com.box.gamebox.ui.Models.Game;
+
 import java.util.List;
 
 public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder> {
