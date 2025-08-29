@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameBox">
         <activity
-            android:name=".ui.Activities.GamesActivity"
+            android:name=".ui.Activities.FavoriteGamesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +30,10 @@
             android:exported="false" />
         <activity
             android:name=".ui.SplashActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.Activities.GamesActivity"
             android:exported="false"/>
 
     </application>
