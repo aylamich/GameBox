@@ -9,7 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.box.gamebox.R;
 import com.box.gamebox.ui.Models.FavoriteGame;
-import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class FavoriteGameAdapter extends RecyclerView.Adapter<FavoriteGameAdapter.FavoriteGameViewHolder> {
@@ -17,7 +18,11 @@ public class FavoriteGameAdapter extends RecyclerView.Adapter<FavoriteGameAdapte
     private List<FavoriteGame> favoriteGameList;
 
     public FavoriteGameAdapter(List<FavoriteGame> favoriteGameList) {
-        this.favoriteGameList = favoriteGameList;
+        if (favoriteGameList == null) {
+            this.favoriteGameList = new ArrayList<>();
+        } else {
+            this.favoriteGameList = favoriteGameList;
+        }
     }
 
     @NonNull
@@ -30,18 +35,21 @@ public class FavoriteGameAdapter extends RecyclerView.Adapter<FavoriteGameAdapte
 
     @Override
     public void onBindViewHolder(@NonNull FavoriteGameViewHolder holder, int position) {
+        if (favoriteGameList == null || position < 0 || position >= favoriteGameList.size()) {
+            return;
+        }
         FavoriteGame currentGame = favoriteGameList.get(position);
+
+        if (currentGame == null) {
+            return;
+        }
+
         holder.titleTextView.setText(currentGame.getTitulo());
 
         int imageResId = currentGame.getIdImagemResource();
 
         if (imageResId != 0) {
-            Picasso.get()
-                    .load(imageResId)
-                    .placeholder(R.drawable.placeholder_image)
-                    .error(R.drawable.placeholder_image)
-                    .into(holder.gameImageView);
-
+            holder.gameImageView.setImageResource(imageResId);
         } else {
             holder.gameImageView.setImageResource(R.drawable.placeholder_image);
         }
@@ -49,12 +57,13 @@ public class FavoriteGameAdapter extends RecyclerView.Adapter<FavoriteGameAdapte
 
     @Override
     public int getItemCount() {
-        return favoriteGameList.size();
+        return favoriteGameList != null ? favoriteGameList.size() : 0;
     }
 
     public static class FavoriteGameViewHolder extends RecyclerView.ViewHolder {
         TextView titleTextView;
         ImageView gameImageView;
+
         public FavoriteGameViewHolder(@NonNull View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.nomeJogo);
@@ -62,4 +71,3 @@ public class FavoriteGameAdapter extends RecyclerView.Adapter<FavoriteGameAdapte
         }
     }
 }
-

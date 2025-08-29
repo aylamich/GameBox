@@ -3,7 +3,6 @@ package com.box.gamebox.ui.Activities;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.box.gamebox.R;
@@ -24,6 +23,9 @@ public class FavoriteGamesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_favorite_games);
 
         favoriteGamesRecyclerView = findViewById(R.id.gamesRecyclerView);
+        if (favoriteGamesRecyclerView == null) {
+            return;
+        }
 
         favoriteGamesRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
@@ -38,10 +40,6 @@ public class FavoriteGamesActivity extends AppCompatActivity {
         favoriteGamesList.add(new FavoriteGame(
                 101, "jogo epico meudeus", "2023-01-15", R.drawable.tlou, 4.8, 1500));
         favoriteGamesList.add(new FavoriteGame(
-                102, "jogo", "2022-07-20", R.drawable.tlou, 4.5, 950));
-
-        if (favoriteGameAdapter != null) {
-            favoriteGameAdapter.notifyDataSetChanged();
-        }
+                102, "jogo", "2022-07-20", R.drawable.tlou2, 4.5, 950));
     }
 }
